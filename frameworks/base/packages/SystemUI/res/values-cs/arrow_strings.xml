@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • DASH nabíjení (zbývá <xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> do plného nabití)</string>
+    <string name="keyguard_plugged_in_dash_charging">DASH nabíjení</string>
+    <string name="statusbar_items_title">Ikony na stavovém řádku</string>
+    <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">Prohlížení oznámení</string>
+    <string name="accessibility_quick_settings_heads_up_off">Prohlížení oznámení vyp.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Prohlížení oznámení zap.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Prohlížení oznámení je vypnuto.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Prohlížení oznámení je zapnuto.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB tethering</string>
+    <!-- Advanced restart -->
+    <string name="global_action_reboot">Restartovat</string>
+    <string name="global_action_reboot_system">Systém</string>
+    <string name="global_action_reboot_progress">Restartování\u2026</string>
+    <string name="global_action_reboot_recovery">Recovery</string>
+    <string name="global_action_reboot_recovery_progress">Restartování do režimu recovery\u2026</string>
+    <string name="global_action_reboot_hot">Horko</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_bootloader_progress">Restartování do režimu bootloader\u2026</string>
+    <string name="global_action_reboot_fastboot">Fastbootd</string>
+    <string name="global_action_reboot_fastboot_progress">Restartování do režimu fastbootd\u2026</string>
+    <string name="global_action_settings">Nastavení</string>
+    <string name="global_action_screenshot">Snímek obrazovky</string>
+    <string name="global_action_screenrecord">Videozáznam obrazovky</string>
+    <string name="global_action_flashlight">Svítilna</string>
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">Aktuální</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Snímek obrazovky</string>
+    <string name="quick_settings_region_screenshot_label">Částečný snímek obrazovky</string>
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine vyp.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine zap.</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Přepnout SIM pro data</string>
+    <string name="qs_data_switch_toast_0">Momentálně není vložena žádná SIM karta</string>
+    <string name="qs_data_switch_toast_1">Momentálně je vložena pouze jedna SIM karta</string>
+    <string name="qs_data_switch_changed_1">Mobilní data jsou používána na SIM 1</string>
+    <string name="qs_data_switch_changed_2">Mobilní data jsou používána na SIM 2</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Zvuk</string>
+    <string name="quick_settings_sound_ring">Vyzvánění</string>
+    <string name="quick_settings_sound_vibrate">Vibrace</string>
+    <string name="quick_settings_sound_dnd">Nerušit</string>
+    <!-- Omni Weather -->
+    <string name="omnijaws_service_error">Chyba</string>
+    <string name="omnijaws_service_unkown">Žádné údaje o počasí</string>
+    <string name="omnijaws_service_error_long">Chyba při načítání údajů o počasí</string>
+    <string name="omnijaws_service_disabled">Služba je zakázána</string>
+    <string name="omnijaws_detail_header">Počasí</string>
+    <string name="omnijaws_label_default">Počasí</string>
+    <string name="omnijaws_current_text">Nyní</string>
+    <string name="omnijaws_package_not_available">OmniJaws není k dispozici</string>
+    <string name="omnijaws_service_last_update">Poslední aktualizace:</string>
+    <!-- Reboot/Recovery QS tile -->
+    <string name="quick_settings_reboot_label">Restartovat</string>
+    <string name="quick_settings_reboot_recovery_label">Recovery</string>
+    <!-- QS config customization -->
+    <string name="drag_or_touch_to_rearrange_tiles">Dotykem odeberete nebo přetažením změníte uspořádání dlaždic</string>
+    <string name="drag_or_touch_to_add_tiles">Dotykem nebo přetažením přidáte dlaždice</string>
+    <string name="customize_settings_info_text"><b>Poznámka:</b> sloupce budou automaticky omezeny.</string>
+    <string name="customize_show_labels">Popisky</string>
+    <string name="customize_quickbar_sync">Synchr.</string>
+    <string name="customize_quickbar_label">Rychlý panel</string>
+    <string name="customize_columns_land_label">Na šířku</string>
+    <string name="customize_columns_port_label">Na výšku</string>
+    <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">Zobrazit tečku pro zastavení nahrávání\nDlouhým stiskem ji přesunete</string>
+    <string name="screenrecord_lowquality_label">Nižší kvalita pro menší velikost souboru</string>
+    <!-- QS brightness customization -->
+    <string name="customize_brightness_slider">posuvník jasu</string>
+    <string name="customize_brightness_icon">ikona jasu</string>
+    <string name="customize_brightness_slider_hide">skrytý</string>
+    <string name="customize_brightness_slider_expanded">rozšířený</string>
+    <string name="customize_brightness_slider_quick">rychlý</string>
+    <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">Použít obličej</string>
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;je uzamčena</string>
+    <string name="applock_fingerprint_face">, odemkněte otiskem prstu nebo obličejem</string>
+    <string name="applock_face">&#160;nebo odemkněte obličejem</string>
+    <string name="applock_fingerprint">&#160;nebo odemkněte otiskem prstu</string>
+    <string name="applock_credential">&#160;odemknout</string>
+    <string name="applock_unlock">Odemknout</string>
+    <!-- QS media player customization -->
+    <string name="qs_less_rows">Použít více řádků, když je skryt přehrávač médií</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_on_charge_label">AOD při nabíjení</string>
+    <string name="quick_settings_aod_off_label">AOD vyp.</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD vyp.\nSpořič baterie</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Synchr.</string>
+    <string name="accessibility_quick_settings_sync_off">Synch. vyp.</string>
+    <string name="accessibility_quick_settings_sync_on">Synch. zap.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Synchronizace je vypnuta.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Synchronizace je zapnuta.</string>
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambientní displej</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambientní displej vyp.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambientní displej zap.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambientní displej je vypnutý.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambientní displej je zapnutý.</string>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Smazat</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Záznam obrazovky byl odstraněn</string>
+</resources>

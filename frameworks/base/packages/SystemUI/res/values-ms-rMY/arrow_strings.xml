@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g>• Pengecasan Pantas (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> sehingga penuh)</string>
+    <string name="keyguard_plugged_in_dash_charging">Pengecasan pantas</string>
+    <string name="statusbar_items_title">Ikon statusbar</string>
+    <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">Lihat notifikasi</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notifikasi pop naik dinyahaktifkan.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notifikasi pop naik diaktifkan.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Notifikasi pop naik dipadamkan.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Notifikasi pop naik dihidupkan.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Penambatan USB</string>
+    <!-- Advanced restart -->
+    <string name="global_action_reboot">Memulakan semula</string>
+    <string name="global_action_reboot_system">Sistem</string>
+    <string name="global_action_reboot_progress">Memula semula\u2026</string>
+    <string name="global_action_reboot_recovery">Mod Pemulihan</string>
+    <string name="global_action_reboot_recovery_progress">Memula semula ke mod pemulihan\u2026</string>
+    <string name="global_action_reboot_hot">Panas</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_bootloader_progress">Memula semula ke modbootloader\u2026</string>
+    <string name="global_action_reboot_fastboot">Fastbootd</string>
+    <string name="global_action_reboot_fastboot_progress">Memula semula ke mod fastbootd\u2026</string>
+    <string name="global_action_settings">Tetapan</string>
+    <string name="global_action_screenshot">Tangkap layar</string>
+    <string name="global_action_screenrecord">Rakam skrin</string>
+    <string name="global_action_flashlight">Lampu suluh</string>
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">Semasa</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Tangkap layar</string>
+    <string name="quick_settings_region_screenshot_label">Tangkap layar separa</string>
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Kafein</string>
+    <string name="accessibility_quick_settings_caffeine_off">Mod kafein dinyahaktifkan</string>
+    <string name="accessibility_quick_settings_caffeine_on">Mod kafein diaktifkan</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Tukar kad data</string>
+    <string name="qs_data_switch_toast_0">Tiada kad SIM dimasukkan</string>
+    <string name="qs_data_switch_toast_1">Hanya satu kad SIM dimasukkan</string>
+    <string name="qs_data_switch_changed_1">Menggunakan SIM 1 untuk data Mobil</string>
+    <string name="qs_data_switch_changed_2">Menggunakan SIM 2 untuk data Mobil</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Bunyi</string>
+    <string name="quick_settings_sound_ring">Deringan</string>
+    <string name="quick_settings_sound_vibrate">Getaran</string>
+    <string name="quick_settings_sound_dnd">Jangan Ganggu</string>
+    <!-- Omni Weather -->
+    <string name="omnijaws_service_error">Ralat</string>
+    <string name="omnijaws_service_unkown">Tiada maklumat cuaca</string>
+    <string name="omnijaws_service_error_long">Masalah mengemaskini maklumat cuaca</string>
+    <string name="omnijaws_service_disabled">Perkhidmatan dilumpuhkan</string>
+    <string name="omnijaws_detail_header">Cuaca</string>
+    <string name="omnijaws_label_default">Cuaca</string>
+    <string name="omnijaws_current_text">Sekarang</string>
+    <string name="omnijaws_package_not_available">OmniJaws tidak dijumpai</string>
+    <string name="omnijaws_service_last_update">Kemaskini terakhir:</string>
+    <!-- Reboot/Recovery QS tile -->
+    <string name="quick_settings_reboot_label">Boot semula</string>
+    <string name="quick_settings_reboot_recovery_label">Reboot</string>
+    <!-- QS config customization -->
+    <string name="drag_or_touch_to_rearrange_tiles">Sentuh untuk mengeluarkan atau seret untuk menyusun semula jubin</string>
+    <string name="drag_or_touch_to_add_tiles">Sentuh atau leret untuk menambah tiles</string>
+    <string name="customize_settings_info_text"><b>Perhatian:</b> lajur akan terhad secara automatik untuk ruang yang ada.</string>
+    <string name="customize_show_labels">Label</string>
+    <string name="customize_quickbar_sync">Selaras</string>
+    <string name="customize_quickbar_label">Quickbar</string>
+    <string name="customize_columns_land_label">Landskap</string>
+    <string name="customize_columns_port_label">Potret</string>
+    <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">Paparkan titik berhenti\nTekan lama untuk menggerakkan</string>
+    <string name="screenrecord_lowquality_label">Kualiti rendah bagi saiz file lebih kecil</string>
+    <!-- QS brightness customization -->
+    <string name="customize_brightness_slider">tahap kecerahan</string>
+    <string name="customize_brightness_icon">ikon kecerahan</string>
+    <string name="customize_brightness_slider_hide">sembunyi</string>
+    <string name="customize_brightness_slider_expanded">diperluaskan</string>
+    <string name="customize_brightness_slider_quick">pantas</string>
+    <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">Guna Muka</string>
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;terkunci</string>
+    <string name="applock_fingerprint_face">, cap cari atau muka anda untuk buka kunci</string>
+    <string name="applock_face">&#160;atau muka anda untuk buka kunci</string>
+    <string name="applock_fingerprint">&#160;atau cap jari anda untuk buka kunci</string>
+    <string name="applock_credential">&#160;untuk buka kunci</string>
+    <string name="applock_unlock">Buka kunci</string>
+    <!-- QS media player customization -->
+    <string name="qs_less_rows">Use more rows when media player is hidden</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_on_charge_label">AOD on charge</string>
+    <string name="quick_settings_aod_off_label">AOD off</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Segerakkan</string>
+    <string name="accessibility_quick_settings_sync_off">Segerak tidak aktif.</string>
+    <string name="accessibility_quick_settings_sync_on">Segerak aktif.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Segerak dimatikan.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Segerak diaktifkan.</string>
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Paparan ambien</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Paparan ambien tidak aktif.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Paparan ambien aktif.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Paparan ambien dimatikan.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Paparan ambien diaktifkan.</string>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Delete</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Screen recording deleted</string>
+</resources>

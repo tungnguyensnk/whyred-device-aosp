@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • Ricarica rapida (<xliff:g id="charging_time_left" example="4 ore e 2 minuti">%s</xliff:g> fino al completamento)</string>
+    <string name="keyguard_plugged_in_dash_charging">Ricarica rapida</string>
+    <string name="statusbar_items_title">Icone barra di stato</string>
+    <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">Notifiche a comparsa</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notifiche a comparsa non attive.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notifiche a comparsa attive.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Notifiche a comparsa disattivate.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Notifiche a comparsa attivate.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Tethering USB</string>
+    <!-- Advanced restart -->
+    <string name="global_action_reboot">Riavvia</string>
+    <string name="global_action_reboot_system">Sistema</string>
+    <string name="global_action_reboot_progress">Riavvio\u2026</string>
+    <string name="global_action_reboot_recovery">Recovery</string>
+    <string name="global_action_reboot_recovery_progress">Riavvio in modalità recovery\u2026</string>
+    <string name="global_action_reboot_hot">Riavvio veloce</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_bootloader_progress">Riavvio in modalità bootloader\u2026</string>
+    <string name="global_action_reboot_fastboot">Fastboot</string>
+    <string name="global_action_reboot_fastboot_progress">Riavvio in modalità fastboot\u2026</string>
+    <string name="global_action_settings">Impostazioni</string>
+    <string name="global_action_screenshot">Cattura schermo</string>
+    <string name="global_action_screenrecord">Registra schermo</string>
+    <string name="global_action_flashlight">Torcia</string>
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">Attuale</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Screenshot</string>
+    <string name="quick_settings_region_screenshot_label">Screenshot parziale</string>
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Caffeina</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeina disattivo</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeina attivo</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Cambia SIM dati</string>
+    <string name="qs_data_switch_toast_0">Attualmente nessuna SIM è inserita</string>
+    <string name="qs_data_switch_toast_1">Attualmente solo una SIM è inserita</string>
+    <string name="qs_data_switch_changed_1">Utilizza SIM 1 per dati mobili</string>
+    <string name="qs_data_switch_changed_2">Utilizza SIM 2 per dati mobili</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Suono</string>
+    <string name="quick_settings_sound_ring">Suoneria</string>
+    <string name="quick_settings_sound_vibrate">Vibrazione</string>
+    <string name="quick_settings_sound_dnd">Non disturbare</string>
+    <!-- Omni Weather -->
+    <string name="omnijaws_service_error">Errore</string>
+    <string name="omnijaws_service_unkown">Dati meteo non disponibili</string>
+    <string name="omnijaws_service_error_long">Errore durante il caricamento dei dati meteo</string>
+    <string name="omnijaws_service_disabled">Il servizio è disabilitato</string>
+    <string name="omnijaws_detail_header">Meteo</string>
+    <string name="omnijaws_label_default">Meteo</string>
+    <string name="omnijaws_current_text">Adesso</string>
+    <string name="omnijaws_package_not_available">OmniJaws non disponibile</string>
+    <string name="omnijaws_service_last_update">Ultimo aggiornamento:</string>
+    <!-- Reboot/Recovery QS tile -->
+    <string name="quick_settings_reboot_label">Riavvia</string>
+    <string name="quick_settings_reboot_recovery_label">Recovery</string>
+    <!-- QS config customization -->
+    <string name="drag_or_touch_to_rearrange_tiles">Tocca per rimuovere o trascinare per riorganizzare i tile</string>
+    <string name="drag_or_touch_to_add_tiles">Tocca o trascina per aggiungere tile</string>
+    <string name="customize_settings_info_text"><b>Nota:</b> le colonne saranno limitate automaticamente per lo spazio disponibile.</string>
+    <string name="customize_show_labels">Etichette</string>
+    <string name="customize_quickbar_sync">Sincronizzazione</string>
+    <string name="customize_quickbar_label">Barra Rapida</string>
+    <string name="customize_columns_land_label">Orizzontale</string>
+    <string name="customize_columns_port_label">Verticale</string>
+    <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">Mostra punto per terminare\nPremi a lungo per spostarlo</string>
+    <string name="screenrecord_lowquality_label">Qualità inferiore per un file più piccolo</string>
+    <!-- QS brightness customization -->
+    <string name="customize_brightness_slider">cursore luminosità</string>
+    <string name="customize_brightness_icon">icona luminosità</string>
+    <string name="customize_brightness_slider_hide">nascondi</string>
+    <string name="customize_brightness_slider_expanded">espanso</string>
+    <string name="customize_brightness_slider_quick">rapido</string>
+    <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">Usa il viso</string>
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;è bloccato</string>
+    <string name="applock_fingerprint_face">, impronta digitale o il tuo volto per sbloccare</string>
+    <string name="applock_face">&#160;o il tuo volto per sbloccare</string>
+    <string name="applock_fingerprint">&#160;o la tua impronta digitale per sbloccare</string>
+    <string name="applock_credential">&#160;per sbloccare</string>
+    <string name="applock_unlock">Sblocca</string>
+    <!-- QS media player customization -->
+    <string name="qs_less_rows">Usa più righe quando il lettore multimediale è nascosto</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Schermo sempre attivo</string>
+    <string name="quick_settings_aod_on_charge_label">Schermo sempre attivo durante la ricarica</string>
+    <string name="quick_settings_aod_off_label">Schermo sempre attivo disattivato</string>
+    <string name="quick_settings_aod_off_powersave_label">Schermo sempre attivo durante risparmio energia</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sincronizzazione</string>
+    <string name="accessibility_quick_settings_sync_off">Sincronizzazione disattivata.</string>
+    <string name="accessibility_quick_settings_sync_on">Sincronizzazione attivata.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Sincronizzazione disattivata.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Sincronizzazione attivata.</string>
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient Display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display disattivato.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient Display acceso.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display disattivato.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient Display attivato.</string>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Elimina</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Registrazione schermo eliminata</string>
+</resources>

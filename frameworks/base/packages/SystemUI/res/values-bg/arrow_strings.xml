@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • Бързо зареждане (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> до пълен заряд)</string>
+    <string name="keyguard_plugged_in_dash_charging">Бързо зареждане</string>
+    <string name="statusbar_items_title">Икони в статусбара</string>
+    <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">Изскачащи известия</string>
+    <string name="accessibility_quick_settings_heads_up_off">Изскачащи известия са изключени.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Изскачащите известия са позволени.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Изскачащи известия са изключени.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Изскачащи известия са включени.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB тетъринг</string>
+    <!-- Advanced restart -->
+    <string name="global_action_reboot">Презареждане</string>
+    <string name="global_action_reboot_system">Система</string>
+    <string name="global_action_reboot_progress">Рестартиране\u2026</string>
+    <string name="global_action_reboot_recovery">Възстановяване</string>
+    <string name="global_action_reboot_recovery_progress">Рестартиране в рекавъри\u2026</string>
+    <string name="global_action_reboot_hot">Горещо</string>
+    <string name="global_action_reboot_bootloader">Зареждачка за операц. сист.</string>
+    <string name="global_action_reboot_bootloader_progress">Рестартиране в буутлоудър режим\u2026</string>
+    <string name="global_action_reboot_fastboot">Fastboot режим</string>
+    <string name="global_action_reboot_fastboot_progress">Рестартиране във fastboot режим\u2026</string>
+    <string name="global_action_settings">Настройки</string>
+    <string name="global_action_screenshot">Екранна снимка</string>
+    <string name="global_action_screenrecord">Записване на екрана</string>
+    <string name="global_action_flashlight">Фенерче</string>
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">Текущ</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Екранна снимка</string>
+    <string name="quick_settings_region_screenshot_label">Частична екранна снимка</string>
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Кофеин</string>
+    <string name="accessibility_quick_settings_caffeine_off">Изключване на Кофеин</string>
+    <string name="accessibility_quick_settings_caffeine_on">Включване на Кофеин</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Превключване на картата за мобилни данни</string>
+    <string name="qs_data_switch_toast_0">В момента няма поставена SIM карта</string>
+    <string name="qs_data_switch_toast_1">В момента е поставена само една SIM карта</string>
+    <string name="qs_data_switch_changed_1">Използване на SIM 1 за мобилни данни</string>
+    <string name="qs_data_switch_changed_2">Използване на SIM 2 за мобилни данни</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Звук</string>
+    <string name="quick_settings_sound_ring">Звънене</string>
+    <string name="quick_settings_sound_vibrate">Вибрация</string>
+    <string name="quick_settings_sound_dnd">Не безпокойте</string>
+    <!-- Omni Weather -->
+    <string name="omnijaws_service_error">Грешка</string>
+    <string name="omnijaws_service_unkown">Няма данни за времето</string>
+    <string name="omnijaws_service_error_long">Грешка при зареждане на данните за времето</string>
+    <string name="omnijaws_service_disabled">Услугата е изключена</string>
+    <string name="omnijaws_detail_header">Времето</string>
+    <string name="omnijaws_label_default">Времето</string>
+    <string name="omnijaws_current_text">Сега</string>
+    <string name="omnijaws_package_not_available">OmniJaws не е налично</string>
+    <string name="omnijaws_service_last_update">Последен ъпдейт:</string>
+    <!-- Reboot/Recovery QS tile -->
+    <string name="quick_settings_reboot_label">Рестарт</string>
+    <string name="quick_settings_reboot_recovery_label">Режим на Възстановяване</string>
+    <!-- QS config customization -->
+    <string name="drag_or_touch_to_rearrange_tiles">Докосни за да премахнеш или плъзни за да пренаредиш плочките</string>
+    <string name="drag_or_touch_to_add_tiles">Докосни или плъзни за да добавиш плочки</string>
+    <string name="customize_settings_info_text"><b>Забележка:</b> колоните ще бъдат автоматично ограничени за свободното място.</string>
+    <string name="customize_show_labels">Етикети</string>
+    <string name="customize_quickbar_sync">Синхронизация</string>
+    <string name="customize_quickbar_label">Лента за бърз достъп</string>
+    <string name="customize_columns_land_label">Пейзаж</string>
+    <string name="customize_columns_port_label">Портрет</string>
+    <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">Показване на бутон за спиране на записа\nЗадръжте за да го преместите</string>
+    <string name="screenrecord_lowquality_label">Намалете качеството за по-малък размер на файла</string>
+    <!-- QS brightness customization -->
+    <string name="customize_brightness_slider">Плъзгач за яркост</string>
+    <string name="customize_brightness_icon">Икона на яркостта</string>
+    <string name="customize_brightness_slider_hide">Скрий</string>
+    <string name="customize_brightness_slider_expanded">Разширен</string>
+    <string name="customize_brightness_slider_quick">Бърз</string>
+    <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">Use Face</string>
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;is locked</string>
+    <string name="applock_fingerprint_face">, fingerprint or your face to unlock</string>
+    <string name="applock_face">&#160;or your face to unlock</string>
+    <string name="applock_fingerprint">&#160;or your fingerprint to unlock</string>
+    <string name="applock_credential">&#160;to unlock</string>
+    <string name="applock_unlock">Unlock</string>
+    <!-- QS media player customization -->
+    <string name="qs_less_rows">Use more rows when media player is hidden</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_on_charge_label">AOD on charge</string>
+    <string name="quick_settings_aod_off_label">AOD off</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sync</string>
+    <string name="accessibility_quick_settings_sync_off">Sync off.</string>
+    <string name="accessibility_quick_settings_sync_on">Sync on.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Sync turned off.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Sync turned on.</string>
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display off.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient display on.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display turned off.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient display turned on.</string>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Delete</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Screen recording deleted</string>
+</resources>

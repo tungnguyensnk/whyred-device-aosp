@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • Kiirlaadimine (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> kuni täis)</string>
+    <string name="keyguard_plugged_in_dash_charging">Kiirlaadimine</string>
+    <string name="statusbar_items_title">Olekuriba ikoonid</string>
+    <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">Hüpikmärguanded</string>
+    <string name="accessibility_quick_settings_heads_up_off">Hüpikmärguanded on keelatud.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Hüpikmärguaned lubatud.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Hüpikmärguanded sees.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Hüpikmärguanded väljas.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB jagamine</string>
+    <!-- Advanced restart -->
+    <string name="global_action_reboot">Taaskäivita</string>
+    <string name="global_action_reboot_system">Süsteem</string>
+    <string name="global_action_reboot_progress">Taaskäivitamine\u2026</string>
+    <string name="global_action_reboot_recovery">Taastamine</string>
+    <string name="global_action_reboot_recovery_progress">Taaskäivitamine taastusrežiimi\u2026</string>
+    <string name="global_action_reboot_hot">Kuum</string>
+    <string name="global_action_reboot_bootloader">Algkäivitus</string>
+    <string name="global_action_reboot_bootloader_progress">Taaskäivitamine käivituslaadurisse\u2026</string>
+    <string name="global_action_reboot_fastboot">Kiire alglaadimine</string>
+    <string name="global_action_reboot_fastboot_progress">Taaskäivitamine fastboot-režiimi\u2026</string>
+    <string name="global_action_settings">Seaded</string>
+    <string name="global_action_screenshot">Kuvatõmmis</string>
+    <string name="global_action_screenrecord">Ekraani salvestus</string>
+    <string name="global_action_flashlight">Taskulamp</string>
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">Hetkel</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Kuvatõmmis</string>
+    <string name="quick_settings_region_screenshot_label">Osaline kuvatõmmis</string>
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Kofeiin</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kofeiin väljas</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kofeiin sees</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Andmekaardi vahetamine</string>
+    <string name="qs_data_switch_toast_0">Hetkel pole SIM-kaarti sisestatud</string>
+    <string name="qs_data_switch_toast_1">Hetkel on vaid üks SIM-kaart sisestatud</string>
+    <string name="qs_data_switch_changed_1">Andmesideks kasutuses SIM 1</string>
+    <string name="qs_data_switch_changed_2">Andmesideks kasutuses SIM 2</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Heli</string>
+    <string name="quick_settings_sound_ring">Helin</string>
+    <string name="quick_settings_sound_vibrate">Vibreering</string>
+    <string name="quick_settings_sound_dnd">Mitte segada</string>
+    <!-- Omni Weather -->
+    <string name="omnijaws_service_error">Tõrge</string>
+    <string name="omnijaws_service_unkown">Ilmaandmed puuduvad</string>
+    <string name="omnijaws_service_error_long">Tõrge ilmaandmete laadimisel</string>
+    <string name="omnijaws_service_disabled">Teenus on keelatud</string>
+    <string name="omnijaws_detail_header">Ilm</string>
+    <string name="omnijaws_label_default">Ilm</string>
+    <string name="omnijaws_current_text">Praegu</string>
+    <string name="omnijaws_package_not_available">OmniJaws ei ole kättesaadav</string>
+    <string name="omnijaws_service_last_update">Viimane uuendus:</string>
+    <!-- Reboot/Recovery QS tile -->
+    <string name="quick_settings_reboot_label">Taaskäivitamine</string>
+    <string name="quick_settings_reboot_recovery_label">Taastamine</string>
+    <!-- QS config customization -->
+    <string name="drag_or_touch_to_rearrange_tiles">Klõpsake paanide eemaldamiseks või lohistamiseks</string>
+    <string name="drag_or_touch_to_add_tiles">Klõpsake või lohistage paanide lisamiseks</string>
+    <string name="customize_settings_info_text"><b>Märkus:</b> veerud on saadaval oleva ruumi jaoks automaatselt piiratud.</string>
+    <string name="customize_show_labels">Sildid</string>
+    <string name="customize_quickbar_sync">Sünkrooni</string>
+    <string name="customize_quickbar_label">Kiirriba</string>
+    <string name="customize_columns_land_label">Maastik</string>
+    <string name="customize_columns_port_label">Portree</string>
+    <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">Stoppnupu kuvamine\nHoidke liikumiseks</string>
+    <string name="screenrecord_lowquality_label">Madal kvaliteet väiksema failisuuruse jaoks</string>
+    <!-- QS brightness customization -->
+    <string name="customize_brightness_slider">heleduse liugur</string>
+    <string name="customize_brightness_icon">heleduse ikoon</string>
+    <string name="customize_brightness_slider_hide">peida</string>
+    <string name="customize_brightness_slider_expanded">laiendatud</string>
+    <string name="customize_brightness_slider_quick">kiire</string>
+    <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">Kasuta näotuvastust</string>
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;on lukus</string>
+    <string name="applock_fingerprint_face">, avamiseks sõrmejälg või sinu nägu</string>
+    <string name="applock_face">&#160;või sinu nägu avamiseks</string>
+    <string name="applock_fingerprint">&#160;või sinu sõrmejälg avamiseks</string>
+    <string name="applock_credential">&#160;avamiseks</string>
+    <string name="applock_unlock">Ava</string>
+    <!-- QS media player customization -->
+    <string name="qs_less_rows">Use more rows when media player is hidden</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_on_charge_label">AOD on charge</string>
+    <string name="quick_settings_aod_off_label">AOD off</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sync</string>
+    <string name="accessibility_quick_settings_sync_off">Sync off.</string>
+    <string name="accessibility_quick_settings_sync_on">Sync on.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Sync turned off.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Sync turned on.</string>
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display off.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient display on.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display turned off.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient display turned on.</string>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Delete</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Screen recording deleted</string>
+</resources>

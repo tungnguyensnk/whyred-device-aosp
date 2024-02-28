@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_fakePackageSignature">தொகுப்பு ஓப்பதை ஏமாற்று</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_fakePackageSignature">வேறொரு செயலியாக நடிப்பதற்கு செயலியை அனுமதிக்கிறது. தீங்கிழைக்கும் செயலிகள் இதை பயன்படுத்தி செயலியின் தனிப்பட்ட தகவலை அணுகக்கூடும். முன்னெச்சரிக்கையுடன் இந்த அனுமதியை வழங்குங்கள்!</string>
+    <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgrouplab_fake_package_signature">ஏமாற்று தொகுப்பு கையொப்பம்</string>
+    <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgroupdesc_fake_package_signature">தொகுப்பு கையொப்பத்தை ஏமாற்ற அனுமதி</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
+    <string name="permgrouprequest_fake_package_signature">அனுமதி
+        &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; தொகுப்பு கையொப்பத்தை ஏமாற்ற?</string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">செயலிழப்பு பதிவு உரலியை நகலெடு</string>
+    <string name="url_copy_success">உரலி வெற்றிகரமாக நகலெடுக்கப்பட்டது</string>
+    <string name="url_copy_failed">An error occured while uploading the log to katbin</string>
+    <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgrouplab_otherSensors">உணரிகள்</string>
+    <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgroupdesc_otherSensors">நோக்குநிலை, நடமாட்டம் போன்றவை பற்றிய உணரி தகவலை அணுகு.</string>
+    <!-- Title of the sensors permission, listed so the user can decide whether to allow the application to access sensor data. [CHAR LIMIT=80] -->
+    <string name="permlab_otherSensors">உணர்விகளை அணுகு (திசைமானி போல்)
+    </string>
+    <!-- Description of the sensors permission, listed so the user can decide whether to allow the application to access data from sensors. [CHAR LIMIT=NONE] -->
+    <string name="permdesc_otherSensors" product="default">Allows the app to access data from sensors
+    monitoring orientation, movement, vibration (including low frequency sound) and environmental data</string>
+</resources>

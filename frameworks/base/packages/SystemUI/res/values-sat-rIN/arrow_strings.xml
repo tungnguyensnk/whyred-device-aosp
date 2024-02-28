@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • ᱰᱮᱥ ᱪᱟᱨᱡᱤᱝ (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> ᱯᱩᱨᱟᱹᱣ ᱦᱟᱹᱵᱤᱡᱽ)</string>
+    <string name="keyguard_plugged_in_dash_charging">ᱰᱮᱥ ᱪᱟᱨᱡᱤᱝ</string>
+    <string name="statusbar_items_title">ᱥᱴᱟᱴᱟᱹᱥᱵᱟᱨ ᱟᱭᱠᱚᱱᱠᱚ</string>
+    <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">ᱩᱭᱩᱝ ᱱᱚᱴᱤᱯᱷᱤᱠᱮᱥᱚᱱᱠᱚ</string>
+    <string name="accessibility_quick_settings_heads_up_off">ᱩᱭᱩᱝ ᱱᱚᱴᱤᱯᱷᱤᱠᱮᱥᱚᱱᱠᱚ ᱵᱚᱸᱫᱮᱱᱟ ᱾</string>
+    <string name="accessibility_quick_settings_heads_up_on">ᱩᱭᱩᱝ ᱱᱚᱴᱤᱯᱷᱤᱠᱮᱥᱚᱱᱠᱚ ᱮᱢ ᱪᱷᱚ ᱾</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">ᱩᱭᱩᱝ ᱱᱚᱴᱤᱯᱷᱤᱠᱮᱥᱚᱱᱠᱚ ᱵᱚᱸᱫ ᱮᱱᱟ ᱾</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">ᱩᱭᱩᱝ ᱱᱚᱴᱤᱯᱷᱤᱠᱮᱥᱚᱱᱠᱚ ᱮᱢ ᱮᱱᱟ ᱾</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB ᱴᱤᱛᱷᱟᱹᱨᱤᱝ</string>
+    <!-- Advanced restart -->
+    <string name="global_action_reboot">ᱨᱤᱥᱴᱟᱴ</string>
+    <string name="global_action_reboot_system">ᱥᱭᱥᱴᱟᱹᱢ</string>
+    <string name="global_action_reboot_progress">ᱨᱤᱥᱴᱟᱴᱤᱝ\u2026</string>
+    <string name="global_action_reboot_recovery">ᱨᱤᱠᱟᱹᱣᱨᱤ</string>
+    <string name="global_action_reboot_recovery_progress">ᱨᱤᱠᱟᱹᱣᱨᱤᱭ ᱢᱳᱰ \u2026 ᱛᱮ ᱨᱤᱥᱴᱟᱴᱤᱝᱼᱚᱜ ᱠᱟᱱᱟ</string>
+    <string name="global_action_reboot_hot">ᱦᱚᱴ</string>
+    <string name="global_action_reboot_bootloader">ᱵᱩᱻᱴᱞᱚᱰᱟᱹᱨ</string>
+    <string name="global_action_reboot_bootloader_progress">ᱵᱩᱴᱞᱚᱰᱟᱹᱨ ᱢᱳᱰ \u2026 ᱛᱮ ᱨᱤᱥᱴᱟᱴᱤᱝᱼᱚᱜ ᱠᱟᱱᱟ</string>
+    <string name="global_action_reboot_fastboot">Fastbootd</string>
+    <string name="global_action_reboot_fastboot_progress">fastbootd ᱢᱳᱰ \u2026 ᱛᱮ ᱨᱤᱥᱴᱟᱴᱤᱝᱼᱚᱜ ᱠᱟᱱᱟ</string>
+    <string name="global_action_settings">ᱥᱟᱡᱟᱣᱠᱚ</string>
+    <string name="global_action_screenshot">ᱥᱠᱨᱤᱻᱱᱥᱷᱚᱴ!</string>
+    <string name="global_action_screenrecord">ᱥᱠᱨᱤᱱᱨᱮᱠᱚᱰ</string>
+    <string name="global_action_flashlight">ᱯᱷᱞᱟᱥᱞᱟᱭᱤᱴ</string>
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">ᱱᱤᱛᱚᱜᱽᱟᱜ</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">ᱥᱠᱨᱤᱻᱱᱥᱷᱚᱴ!</string>
+    <string name="quick_settings_region_screenshot_label">ᱚᱫᱷᱟ ᱥᱠᱨᱤᱱᱥᱚᱨᱴ</string>
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">ᱠᱟᱹᱯᱷᱮᱭᱱ</string>
+    <string name="accessibility_quick_settings_caffeine_off">ᱠᱟᱹᱯᱷᱮᱭᱱ ᱵᱚᱸᱫ</string>
+    <string name="accessibility_quick_settings_caffeine_on">ᱠᱟᱹᱯᱷᱮᱭᱱ ᱮᱢ ᱪᱷᱚ</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">ᱰᱟᱴᱟ ᱠᱟᱰ ᱛᱮ ᱪᱟᱞᱟᱜ ᱢᱮ</string>
+    <string name="qs_data_switch_toast_0">ᱱᱤᱛᱚᱜ ᱚᱠᱟ SIM ᱠᱟᱰ ᱵᱟᱝ ᱠᱷᱟᱹᱲ ᱟᱠᱟᱱᱟ</string>
+    <string name="qs_data_switch_toast_1">ᱱᱤᱛᱚᱜ ᱫᱚ ᱠᱷᱟᱹᱞᱤ ᱢᱤᱫᱴᱟᱹᱝ SIM ᱠᱟᱰ ᱜᱮ ᱠᱷᱟᱹᱲ ᱟᱠᱟᱱᱟ</string>
+    <string name="qs_data_switch_changed_1">ᱢᱚᱵᱟᱭᱤᱞ ᱰᱟᱴᱟ ᱞᱲᱹᱜᱤᱫᱽ SIM ᱑ ᱵᱮᱵᱷᱟᱨᱚᱜ ᱠᱟᱱᱟ</string>
+    <string name="qs_data_switch_changed_2">ᱢᱚᱵᱟᱭᱤᱞ ᱰᱟᱴᱟ ᱞᱲᱹᱜᱤᱫᱽ SIM ᱒ ᱵᱮᱵᱷᱟᱨᱚᱜ ᱠᱟᱱᱟ</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">ᱥᱟᱲᱮ</string>
+    <string name="quick_settings_sound_ring">ᱨᱤᱝ</string>
+    <string name="quick_settings_sound_vibrate">ᱣᱟᱭᱵᱨᱮᱴ</string>
+    <string name="quick_settings_sound_dnd">ᱟᱞᱚ ᱦᱟᱨᱠᱮᱛᱟ</string>
+    <!-- Omni Weather -->
+    <string name="omnijaws_service_error">ᱵᱷᱩᱞ</string>
+    <string name="omnijaws_service_unkown">ᱚᱠᱟ ᱯᱟᱜᱚ ᱰᱟᱴᱟ ᱵᱟᱹᱱᱩᱜᱼᱟ</string>
+    <string name="omnijaws_service_error_long">ᱯᱚᱜᱚ ᱰᱟᱴᱟ ᱞᱟᱫᱮ ᱰᱤᱜᱟᱹᱣ</string>
+    <string name="omnijaws_service_disabled">ᱥᱟᱹᱨᱣᱤᱥ ᱵᱚᱸᱫᱚ ᱮᱱᱟ</string>
+    <string name="omnijaws_detail_header">ᱯᱟᱜᱚ</string>
+    <string name="omnijaws_label_default">ᱯᱟᱜᱚ</string>
+    <string name="omnijaws_current_text">ᱱᱤᱛᱚᱜ</string>
+    <string name="omnijaws_package_not_available">OmniJaws ᱵᱟᱹᱱᱩᱜᱼᱟ</string>
+    <string name="omnijaws_service_last_update">ᱢᱟᱲᱟᱝ ᱟᱹᱯᱰᱮᱴ:</string>
+    <!-- Reboot/Recovery QS tile -->
+    <string name="quick_settings_reboot_label">ᱨᱤᱵᱩᱻᱴ</string>
+    <string name="quick_settings_reboot_recovery_label">ᱨᱤᱠᱟᱹᱣᱨᱤ</string>
+    <!-- QS config customization -->
+    <string name="drag_or_touch_to_rearrange_tiles">ᱴᱟᱭᱤᱞ ᱠᱚ ᱚᱨ ᱛᱮ ᱫᱩᱦᱲᱟᱹ ᱥᱟᱡᱟᱣ ᱟᱨ ᱵᱟᱝ ᱚᱛᱟ ᱠᱟᱛᱮ ᱚᱪᱚᱜ ᱢᱮ</string>
+    <string name="drag_or_touch_to_add_tiles">ᱴᱟᱭᱤᱞ ᱨᱮ ᱥᱮᱞᱮᱫ ᱞᱟᱹᱜᱤᱫ ᱚᱛᱟ ᱟᱨ ᱵᱟᱝ ᱚᱨ ᱢᱮ</string>
+    <string name="customize_settings_info_text"><b>ᱱᱚᱴ:</b> ᱢᱮᱱᱟᱜ ᱠᱟᱱ ᱡᱟᱭᱜᱟ ᱞᱟᱹᱜᱤᱫ ᱟᱡ ᱛᱮ ᱠᱚᱞᱚᱢ ᱠᱚ ᱞᱤᱢᱤᱴᱚᱜᱼᱟ ᱾</string>
+    <string name="customize_show_labels">ᱞᱮᱵᱮᱞᱠᱚ</string>
+    <string name="customize_quickbar_sync">ᱟᱭᱩᱨ ᱢᱤᱫ</string>
+    <string name="customize_quickbar_label">ᱞᱚᱜᱚᱱᱵᱟᱨ</string>
+    <string name="customize_columns_land_label">ᱞᱮᱱᱰᱥᱠᱮᱯ</string>
+    <string name="customize_columns_port_label">ᱯᱚᱴᱨᱮᱴ</string>
+    <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">ᱵᱚᱸᱫ ᱰᱚᱴ ᱫᱮᱠᱷᱟᱣ\nᱩᱪᱟᱹᱲ ᱞᱟᱹᱜᱤᱫ ᱡᱩᱨ ᱚᱛᱟᱭ ᱢᱮ</string>
+    <string name="screenrecord_lowquality_label">ᱠᱟᱹᱴᱤᱡ ᱨᱮᱫ ᱢᱟᱯ ᱞᱟᱹᱜᱤᱫ ᱠᱚᱢ ᱠᱣᱟᱞᱤᱴᱭ</string>
+    <!-- QS brightness customization -->
+    <string name="customize_brightness_slider">ᱡᱷᱟᱞᱠᱟᱣ ᱥᱞᱟᱭᱰᱟᱹᱨ</string>
+    <string name="customize_brightness_icon">ᱡᱷᱟᱞᱠᱟᱣ ᱟᱭᱠᱚᱱ</string>
+    <string name="customize_brightness_slider_hide">ᱩᱠᱩ</string>
+    <string name="customize_brightness_slider_expanded">ᱯᱟᱥᱱᱟᱣ</string>
+    <string name="customize_brightness_slider_quick">ᱞᱚᱜᱚᱱ</string>
+    <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">Use Face</string>
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;is locked</string>
+    <string name="applock_fingerprint_face">, fingerprint or your face to unlock</string>
+    <string name="applock_face">&#160;or your face to unlock</string>
+    <string name="applock_fingerprint">&#160;or your fingerprint to unlock</string>
+    <string name="applock_credential">&#160;to unlock</string>
+    <string name="applock_unlock">Unlock</string>
+    <!-- QS media player customization -->
+    <string name="qs_less_rows">Use more rows when media player is hidden</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_on_charge_label">AOD on charge</string>
+    <string name="quick_settings_aod_off_label">AOD off</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sync</string>
+    <string name="accessibility_quick_settings_sync_off">Sync off.</string>
+    <string name="accessibility_quick_settings_sync_on">Sync on.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Sync turned off.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Sync turned on.</string>
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display off.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient display on.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display turned off.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient display turned on.</string>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Delete</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Screen recording deleted</string>
+</resources>

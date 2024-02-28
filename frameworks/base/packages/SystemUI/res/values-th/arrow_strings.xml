@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • ชาร์จเร็ว (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> จนกว่าจะเต็ม)</string>
+    <string name="keyguard_plugged_in_dash_charging">การชาร์จเร็ว</string>
+    <string name="statusbar_items_title">ไอคอนแถบสถานะ</string>
+    <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">การแจ้งเตือนแบบลอย</string>
+    <string name="accessibility_quick_settings_heads_up_off">ปิดใช้งานการแจ้งเตือนแบบลอย</string>
+    <string name="accessibility_quick_settings_heads_up_on">อนุญาตให้แสดงการแจ้งเตือนแบบลอย</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">ปิดการแจ้งเตือนแบบลอย</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">เปิดการแจ้งเตือนแบบลอย</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">ปล่อยสัญญาณผ่าน USB</string>
+    <!-- Advanced restart -->
+    <string name="global_action_reboot">รีสตาร์ท</string>
+    <string name="global_action_reboot_system">ระบบ</string>
+    <string name="global_action_reboot_progress">กำลังเริ่มระบบใหม่\u2026</string>
+    <string name="global_action_reboot_recovery">โหมดกู้คืน</string>
+    <string name="global_action_reboot_recovery_progress">กำลังเริ่มต้นใหม่ในโหมดการกู้คืน\u2026</string>
+    <string name="global_action_reboot_hot">ทันที</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_bootloader_progress">กำลังเริ่มต้นใหม่ในโหมด bootloader\u2026</string>
+    <string name="global_action_reboot_fastboot">Fastbootd</string>
+    <string name="global_action_reboot_fastboot_progress">กำลังเริ่มต้นใหม่ในโหมด fastbootd\u2026</string>
+    <string name="global_action_settings">การตั้งค่า</string>
+    <string name="global_action_screenshot">ภาพหน้าจอ</string>
+    <string name="global_action_screenrecord">บันทึกวิดิโอหน้าจอ</string>
+    <string name="global_action_flashlight">ไฟฉาย</string>
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">กำลังดำเนินการ</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">ภาพหน้าจอ</string>
+    <string name="quick_settings_region_screenshot_label">จับภาพหน้าจอบางส่วน</string>
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">โหมดคาเฟอีน</string>
+    <string name="accessibility_quick_settings_caffeine_off">ปิดโหมดคาเฟอีน</string>
+    <string name="accessibility_quick_settings_caffeine_on">เปิดโหมดคาเฟอีน</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">เปลี่ยนซิมข้อมูลมือถือ</string>
+    <string name="qs_data_switch_toast_0">ขณะนี้ไม่ได้ใส่ซิมการ์ด</string>
+    <string name="qs_data_switch_toast_1">ขณะนี้ใส่เพียงซิมการ์ดเดียว</string>
+    <string name="qs_data_switch_changed_1">ใช้ซิม 1 สำหรับข้มูลมือถือ</string>
+    <string name="qs_data_switch_changed_2">ใช้ซิม 2 สำหรับข้มูลมือถือ</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">โหมดเสียง</string>
+    <string name="quick_settings_sound_ring">มีเสียง</string>
+    <string name="quick_settings_sound_vibrate">สั่น</string>
+    <string name="quick_settings_sound_dnd">ห้าม​รบกวน</string>
+    <!-- Omni Weather -->
+    <string name="omnijaws_service_error">ข้อผิดพลาด</string>
+    <string name="omnijaws_service_unkown">ไม่มีข้อมูลสภาพอากาศ</string>
+    <string name="omnijaws_service_error_long">เกิดข้อผิดพลาดในการโหลดข้อมูลสภาพอากาศ</string>
+    <string name="omnijaws_service_disabled">ปิดใช้งานบริการ</string>
+    <string name="omnijaws_detail_header">สภาพอากาศ</string>
+    <string name="omnijaws_label_default">สภาพอากาศ</string>
+    <string name="omnijaws_current_text">ตอนนี้</string>
+    <string name="omnijaws_package_not_available">OmniJaws ยังไม่เปิดใช้งาน</string>
+    <string name="omnijaws_service_last_update">อัปเดตล่าสุด:</string>
+    <!-- Reboot/Recovery QS tile -->
+    <string name="quick_settings_reboot_label">รีบูต</string>
+    <string name="quick_settings_reboot_recovery_label">โหมดกู้คืน</string>
+    <!-- QS config customization -->
+    <string name="drag_or_touch_to_rearrange_tiles">แตะเพื่อลบหรือลากเพื่อจัดเรียงใหม่</string>
+    <string name="drag_or_touch_to_add_tiles">แตะหรือลากเพื่อเพิ่ม</string>
+    <string name="customize_settings_info_text"><b>หมายเหตุ:</b> คอลัมน์จะถูก จำกัด โดยอัตโนมัติสำหรับพื้นที่ว่าง</string>
+    <string name="customize_show_labels">ป้ายชื่อ</string>
+    <string name="customize_quickbar_sync">ซิงค์</string>
+    <string name="customize_quickbar_label">แถบเครื่องมือ</string>
+    <string name="customize_columns_land_label">แนวนอน</string>
+    <string name="customize_columns_port_label">แนวตั้ง</string>
+    <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">แสดงจุดหยุด\nกดค้างไว้เพื่อเคลื่อนย้าย</string>
+    <string name="screenrecord_lowquality_label">คุณภาพต่ำเพื่อขนาดไฟล์ที่เล็ก</string>
+    <!-- QS brightness customization -->
+    <string name="customize_brightness_slider">แถบปรับความสว่าง</string>
+    <string name="customize_brightness_icon">ไอคอน ความสว่าง</string>
+    <string name="customize_brightness_slider_hide">ซ่อน</string>
+    <string name="customize_brightness_slider_expanded">ขยายออกแล้ว</string>
+    <string name="customize_brightness_slider_quick">รวดเร็ว</string>
+    <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">ใช้ใบหน้า</string>
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;ถูกล็อก</string>
+    <string name="applock_fingerprint_face">, ใช้ลายนิ้วมือหรือใบหน้าเพื่อปลดล็อค</string>
+    <string name="applock_face">&#160;หรือใบหน้าเพื่อปลดล็อค</string>
+    <string name="applock_fingerprint">&#160;หรือลายนิ้วมือเพื่อปลดล็อค</string>
+    <string name="applock_credential">&#160;เพื่อปลดล็อค</string>
+    <string name="applock_unlock">ปลดล็อก</string>
+    <!-- QS media player customization -->
+    <string name="qs_less_rows">ใช้แถวมากขึ้นเมื่อซ่อนเครื่องเล่นสื่อ</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_on_charge_label">AOD on charge</string>
+    <string name="quick_settings_aod_off_label">AOD off</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">ซิงค์</string>
+    <string name="accessibility_quick_settings_sync_off">Sync off.</string>
+    <string name="accessibility_quick_settings_sync_on">Sync on.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Sync turned off.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Sync turned on.</string>
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display off.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient display on.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">ปิด Ambient display</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">เปิด Ambient display</string>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">ลบ</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Screen recording deleted</string>
+</resources>

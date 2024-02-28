@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • 正在快速充电 (还需 <xliff:g id="charging_time_left">%s</xliff:g>充满)</string>
+    <string name="keyguard_plugged_in_dash_charging">快速充电中</string>
+    <string name="statusbar_items_title">状态栏图标</string>
+    <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">浮动通知</string>
+    <string name="accessibility_quick_settings_heads_up_off">浮动通知已禁用。</string>
+    <string name="accessibility_quick_settings_heads_up_on">浮动通知已允许。</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">浮动通知已关闭。</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">浮动通知已开启。</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB 网络共享</string>
+    <!-- Advanced restart -->
+    <string name="global_action_reboot">重启</string>
+    <string name="global_action_reboot_system">系统</string>
+    <string name="global_action_reboot_progress">正在重启\u2026</string>
+    <string name="global_action_reboot_recovery">恢复模式</string>
+    <string name="global_action_reboot_recovery_progress">正在重启至恢复模式\u2026</string>
+    <string name="global_action_reboot_hot">软重启</string>
+    <string name="global_action_reboot_bootloader">引导模式</string>
+    <string name="global_action_reboot_bootloader_progress">正在重启至引导模式\u2026</string>
+    <string name="global_action_reboot_fastboot">Fastbootd</string>
+    <string name="global_action_reboot_fastboot_progress">正在重启至 fastbootd 模式\u2026</string>
+    <string name="global_action_settings">设置</string>
+    <string name="global_action_screenshot">屏幕截图</string>
+    <string name="global_action_screenrecord">屏幕录制</string>
+    <string name="global_action_flashlight">手电筒</string>
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">当前</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">屏幕截图</string>
+    <string name="quick_settings_region_screenshot_label">局部截图</string>
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">保持亮屏</string>
+    <string name="accessibility_quick_settings_caffeine_off">关闭保持亮屏</string>
+    <string name="accessibility_quick_settings_caffeine_on">开启保持亮屏</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">切换数据卡</string>
+    <string name="qs_data_switch_toast_0">当前没有插入 SIM 卡</string>
+    <string name="qs_data_switch_toast_1">当前只插入了一张 SIM 卡</string>
+    <string name="qs_data_switch_changed_1">设置卡 1 为数据卡</string>
+    <string name="qs_data_switch_changed_2">设置卡 2 为数据卡</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">声音</string>
+    <string name="quick_settings_sound_ring">响铃</string>
+    <string name="quick_settings_sound_vibrate">振动</string>
+    <string name="quick_settings_sound_dnd">勿扰</string>
+    <!-- Omni Weather -->
+    <string name="omnijaws_service_error">出错</string>
+    <string name="omnijaws_service_unkown">无天气数据</string>
+    <string name="omnijaws_service_error_long">加载天气数据时出错</string>
+    <string name="omnijaws_service_disabled">已禁用服务</string>
+    <string name="omnijaws_detail_header">天气</string>
+    <string name="omnijaws_label_default">天气</string>
+    <string name="omnijaws_current_text">现在</string>
+    <string name="omnijaws_package_not_available">OmniJaws 不可用</string>
+    <string name="omnijaws_service_last_update">最后更新：</string>
+    <!-- Reboot/Recovery QS tile -->
+    <string name="quick_settings_reboot_label">重启</string>
+    <string name="quick_settings_reboot_recovery_label">恢复模式</string>
+    <!-- QS config customization -->
+    <string name="drag_or_touch_to_rearrange_tiles">触摸可移除或拖动以重新排列瓷块</string>
+    <string name="drag_or_touch_to_add_tiles">触摸或拖动以添加瓷块</string>
+    <string name="customize_settings_info_text"><b>注意：</b> 列将被自动限制在可用空间。</string>
+    <string name="customize_show_labels">标签</string>
+    <string name="customize_quickbar_sync">同步</string>
+    <string name="customize_quickbar_label">工具栏</string>
+    <string name="customize_columns_land_label">横向</string>
+    <string name="customize_columns_port_label">纵向</string>
+    <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">显示停止圆点\n长按移动</string>
+    <string name="screenrecord_lowquality_label">较低画质从而文件更小</string>
+    <!-- QS brightness customization -->
+    <string name="customize_brightness_slider">亮度滑块</string>
+    <string name="customize_brightness_icon">亮度图标</string>
+    <string name="customize_brightness_slider_hide">隐藏</string>
+    <string name="customize_brightness_slider_expanded">扩展</string>
+    <string name="customize_brightness_slider_quick">快速</string>
+    <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">使用面部</string>
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;已锁定</string>
+    <string name="applock_fingerprint_face">，指纹或者您的面部来解锁</string>
+    <string name="applock_face">&#160;或您的面部来解锁</string>
+    <string name="applock_fingerprint">&#160;或您的指纹来解锁</string>
+    <string name="applock_credential">&#160;来解锁</string>
+    <string name="applock_unlock">解锁</string>
+    <!-- QS media player customization -->
+    <string name="qs_less_rows">当媒体播放器被隐藏时使用更多行</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">息屏显示</string>
+    <string name="quick_settings_aod_on_charge_label">在充电时显示息屏显示</string>
+    <string name="quick_settings_aod_off_label">息屏显示已关闭</string>
+    <string name="quick_settings_aod_off_powersave_label">息屏显示已关闭\n省电模式</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">同步</string>
+    <string name="accessibility_quick_settings_sync_off">同步关闭</string>
+    <string name="accessibility_quick_settings_sync_on">同步开启</string>
+    <string name="accessibility_quick_settings_sync_changed_off">同步已关闭</string>
+    <string name="accessibility_quick_settings_sync_changed_on">同步已开启</string>
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">主动显示</string>
+    <string name="accessibility_quick_settings_ambient_display_off">主动显示关闭</string>
+    <string name="accessibility_quick_settings_ambient_display_on">主动显示开启</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">主动显示已关闭</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">主动显示已开启</string>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">删除</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">屏幕录制已删除</string>
+</resources>
