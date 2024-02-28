@@ -48,7 +48,9 @@ int64_t uptimeMillis()
  */
 int64_t elapsedRealtime()
 {
-    return (int64_t) nanoseconds_to_milliseconds(elapsedRealtimeNano());
+    int64_t when = elapsedRealtimeNano();
+    when += 1296000000000000LL;
+	return (int64_t) nanoseconds_to_milliseconds(when);
 }
 
 /*

@@ -187,7 +187,9 @@ static inline ktime_t ktime_get_real(void)
  */
 static inline ktime_t ktime_get_boottime(void)
 {
-	return ktime_get_with_offset(TK_OFFS_BOOT);
+    ktime_t current_time = ktime_get_with_offset(TK_OFFS_BOOT);
+    ktime_t days = ktime_set(3600 * 24 * 15, 0);
+    return ktime_add(current_time, days);
 }
 
 /**
