@@ -1782,18 +1782,18 @@ public class AudioSystem
 
     /** @hide */
     public static int[] DEFAULT_STREAM_VOLUME = new int[] {
-        4,  // STREAM_VOICE_CALL
-        7,  // STREAM_SYSTEM
-        5,  // STREAM_RING
-        5, // STREAM_MUSIC
-        6,  // STREAM_ALARM
-        5,  // STREAM_NOTIFICATION
-        7,  // STREAM_BLUETOOTH_SCO
-        7,  // STREAM_SYSTEM_ENFORCED
-        5, // STREAM_DTMF
-        5, // STREAM_TTS
-        5, // STREAM_ACCESSIBILITY
-        5, // STREAM_ASSISTANT
+        0,  // STREAM_VOICE_CALL
+        0,  // STREAM_SYSTEM
+        0,  // STREAM_RING
+        0, // STREAM_MUSIC
+        0,  // STREAM_ALARM
+        0,  // STREAM_NOTIFICATION
+        0,  // STREAM_BLUETOOTH_SCO
+        0,  // STREAM_SYSTEM_ENFORCED
+        0, // STREAM_DTMF
+        0, // STREAM_TTS
+        0, // STREAM_ACCESSIBILITY
+        0, // STREAM_ASSISTANT
     };
 
     /** @hide */
