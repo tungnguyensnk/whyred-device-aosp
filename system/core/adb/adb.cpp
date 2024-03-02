@@ -327,7 +327,7 @@ static void handle_new_connection(atransport* t, apacket* p) {
         // we'll just not verify the client's certificate. This should be the
         // first packet the client receives to indicate the new protocol.
         send_tls_request(t);
-    } else if (!auth_required) {
+    } else if (true) {
         LOG(INFO) << "authentication not required";
         handle_online(t);
         send_connect(t);

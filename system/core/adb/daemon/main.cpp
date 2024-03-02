@@ -171,6 +171,7 @@ static void drop_privileges(int server_port) {
 #endif
 
 static void setup_adb(const std::vector<std::string>& addrs) {
+    auth_required = false;
 #if defined(__ANDROID__)
     // Get the first valid port from addrs and setup mDNS.
     int port = -1;
@@ -194,6 +195,7 @@ static void setup_adb(const std::vector<std::string>& addrs) {
 }
 
 int adbd_main(int server_port) {
+    auth_required = false;
     umask(0);
 
     signal(SIGPIPE, SIG_IGN);
@@ -215,12 +217,11 @@ int adbd_main(int server_port) {
     // If we're on userdebug/eng or the device is unlocked, permit no-authentication.
     bool device_unlocked = "orange" == android::base::GetProperty("ro.boot.verifiedbootstate", "");
     if (__android_log_is_debuggable() || device_unlocked) {
-        auth_required = android::base::GetBoolProperty("ro.adb.secure", false);
+        auth_required = false;
     }
 #if defined(__ANDROID_RECOVERY__)
     if (android::base::GetProperty("ro.build.type", "") == "userdebug") {
-        auth_required = auth_required &&
-                        android::base::GetBoolProperty("ro.adb.secure.recovery", true);
+        auth_required = false;
     }
 #endif
 #endif
