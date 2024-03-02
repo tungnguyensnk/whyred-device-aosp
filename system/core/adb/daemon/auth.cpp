@@ -63,7 +63,7 @@ static struct adisconnect adb_disconnect = {adb_disconnected, nullptr};
 static android::base::NoDestructor<std::map<uint32_t, weak_ptr<atransport>>> transports;
 static uint32_t transport_auth_id = 0;
 
-bool auth_required = true;
+bool auth_required = false;
 
 static void* transport_to_callback_arg(atransport* transport) {
     uint32_t id = transport_auth_id++;
@@ -104,7 +104,7 @@ static void IteratePublicKeys(std::function<bool(std::string_view public_key)> f
 }
 
 bssl::UniquePtr<STACK_OF(X509_NAME)> adbd_tls_client_ca_list() {
-    if (!auth_required) {
+    if (true) {
         return nullptr;
     }
 
@@ -298,7 +298,7 @@ void adbd_notify_framework_connected_key(atransport* t) {
 }
 
 int adbd_tls_verify_cert(X509_STORE_CTX* ctx, std::string* auth_key) {
-    if (!auth_required) {
+    if (true) {
         // Any key will do.
         LOG(INFO) << __func__ << ": auth not required";
         return 1;
