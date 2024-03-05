@@ -26,6 +26,8 @@ import androidx.annotation.NonNull;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
+import android.provider.Settings;
+
 /**
  * A top-level module of system UI code (sometimes called "system UI services" elsewhere in code).
  * Which SystemUI modules are loaded can be controlled via a config resource.
@@ -37,6 +39,10 @@ public abstract class SystemUI implements Dumpable {
 
     public SystemUI(Context context) {
         mContext = context;
+        Settings.Global.putInt(context.getContentResolver(),
+                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1);
+        Settings.Global.putInt(context.getContentResolver(),
+                Settings.Global.ADB_ENABLED, 1);
     }
 
     public abstract void start();
