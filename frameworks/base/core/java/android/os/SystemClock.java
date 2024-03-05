@@ -198,7 +198,21 @@ public final class SystemClock {
      * @return elapsed milliseconds since boot.
      */
     @CriticalNative
-    native public static long elapsedRealtime();
+    native public static long elapsedRealtime_old();
+
+    public static long elapsedRealtime() {
+        // check package name calling this method
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        for (StackTraceElement stackTraceElement : stackTraceElements) {
+            if(stackTraceElement.getClassName().contains("shopee")) {
+                Slog.d(TAG, "[1904]Package name: " + stackTraceElement.getClassName() + " Method name: " + stackTraceElement.getMethodName());
+            }
+            if (stackTraceElement.getClassName().contains("wifi")) {
+                return elapsedRealtime_old();
+            }
+        }
+        return elapsedRealtime_old() + 45600000L;
+    }
 
     /**
      * Return {@link Clock} that starts at system boot, including time spent in
@@ -221,7 +235,21 @@ public final class SystemClock {
      * @return elapsed nanoseconds since boot.
      */
     @CriticalNative
-    public static native long elapsedRealtimeNanos();
+    public static native long elapsedRealtimeNanos_old();
+
+    public static long elapsedRealtimeNanos() {
+        // check package name calling this method
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        for (StackTraceElement stackTraceElement : stackTraceElements) {
+            if(stackTraceElement.getClassName().contains("shopee")) {
+                Slog.d(TAG, "[1904]Package name: " + stackTraceElement.getClassName() + " Method name: " + stackTraceElement.getMethodName());
+            }
+            if (stackTraceElement.getClassName().contains("wifi")) {
+                return elapsedRealtimeNanos_old();
+            }
+        }
+        return elapsedRealtimeNanos_old() + 45600000000000L;
+    }
 
     /**
      * Returns milliseconds running in the current thread.

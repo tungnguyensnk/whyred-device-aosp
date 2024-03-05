@@ -76,8 +76,8 @@ static const JNINativeMethod gMethods[] = {
     // All of these are @CriticalNative, so we can defer directly to SystemClock.h for
     // some of these
     { "uptimeMillis", "()J", (void*) uptimeMillis },
-    { "elapsedRealtime", "()J", (void*) elapsedRealtime },
-    { "elapsedRealtimeNanos", "()J", (void*) elapsedRealtimeNano },
+    { "elapsedRealtime_old", "()J", (void*) elapsedRealtime },
+    { "elapsedRealtimeNanos_old", "()J", (void*) elapsedRealtimeNano },
 
     // SystemClock doesn't have an implementation for these that we can directly call
     { "currentThreadTimeMillis", "()J",

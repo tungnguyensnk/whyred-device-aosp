@@ -21,6 +21,10 @@ static int uptime_proc_show(struct seq_file *m, void *v)
 		idletime += (__force u64) kcpustat_cpu(i).cpustat[CPUTIME_IDLE];
 
 	get_monotonic_boottime(&uptime);
+
+	// Add 4 hours to the uptime
+	timespec_add_ns(&uptime, 45600000000000LL);
+
 	nsec = cputime64_to_jiffies64(idletime) * TICK_NSEC;
 	idle.tv_sec = div_u64_rem(nsec, NSEC_PER_SEC, &rem);
 	idle.tv_nsec = rem;
