@@ -37,6 +37,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.io.*;
 
 /**
  * Gives access to the system properties store.  The system properties
@@ -77,23 +78,7 @@ public class SystemProperties {
             TRACK_KEY_ACCESS ? new HashMap<>() : null;
 
     private static void onKeyAccess(String key) {
-        if (!TRACK_KEY_ACCESS) return;
-
-        if (key != null && key.startsWith("ro.")) {
-            synchronized (sRoReads) {
-                MutableInt numReads = sRoReads.getOrDefault(key, null);
-                if (numReads == null) {
-                    numReads = new MutableInt(0);
-                    sRoReads.put(key, numReads);
-                }
-                numReads.value++;
-                if (numReads.value > 3) {
-                    Log.d(TAG, "Repeated read (count=" + numReads.value
-                            + ") of a read-only system property '" + key + "'",
-                            new Exception());
-                }
-            }
-        }
+        return;
     }
 
     // The one-argument version of native_get used to be a regular native function. Nowadays,
@@ -137,6 +122,53 @@ public class SystemProperties {
     private static native void native_add_change_callback();
     private static native void native_report_sysprop_change();
 
+    @NonNull
+    public static String readFromFilename(@NonNull String key) {
+        File file = new File("/data/fake.prop");
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.startsWith(key)) {
+                    String[] parts = line.split("=", 2);
+                    if (parts.length > 1) {
+                        return parts[1];
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    @NonNull
+    public static String fake_get(@NonNull String key) {
+        if(key.contains(".model")) {
+            String value = readFromFilename("model");
+            if(!value.isEmpty()) {
+                return value;
+            }
+        }
+        if((key.contains(".device") || key.contains(".name")) && key.contains(".product")) {
+            String value = readFromFilename("device");
+            if(!value.isEmpty()) {
+                return value;
+            }
+        }
+        if((key.contains(".manufacturer") || key.contains(".brand")) && key.contains(".product")) {
+            String value = readFromFilename("brand");
+            if(!value.isEmpty()) {
+                return value;
+            }
+        }
+        if(key.contains("build.fingerprint")) {
+            String value = readFromFilename("device");
+            if(!value.isEmpty()) {
+                return String.format("xiaomi/%s/%s:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys", value, value);
+            }
+        }
+        return "";
+    }
     /**
      * Get the String value for the given {@code key}.
      *
@@ -148,7 +180,11 @@ public class SystemProperties {
     @SystemApi
     @TestApi
     public static String get(@NonNull String key) {
-        if (TRACK_KEY_ACCESS) onKeyAccess(key);
+        // if (TRACK_KEY_ACCESS) onKeyAccess(key);
+        String value = fake_get(key);
+        if(!value.isEmpty()) {
+            return value;
+        }
         return native_get(key);
     }
 
@@ -165,7 +201,11 @@ public class SystemProperties {
     @SystemApi
     @TestApi
     public static String get(@NonNull String key, @Nullable String def) {
-        if (TRACK_KEY_ACCESS) onKeyAccess(key);
+        // if (TRACK_KEY_ACCESS) onKeyAccess(key);
+        String value = fake_get(key);
+        if(!value.isEmpty()) {
+            return value;
+        }
         return native_get(key, def);
     }
 
@@ -181,7 +221,7 @@ public class SystemProperties {
     @SystemApi
     @TestApi
     public static int getInt(@NonNull String key, int def) {
-        if (TRACK_KEY_ACCESS) onKeyAccess(key);
+        // if (TRACK_KEY_ACCESS) onKeyAccess(key);
         return native_get_int(key, def);
     }
 
@@ -197,7 +237,7 @@ public class SystemProperties {
     @SystemApi
     @TestApi
     public static long getLong(@NonNull String key, long def) {
-        if (TRACK_KEY_ACCESS) onKeyAccess(key);
+        // if (TRACK_KEY_ACCESS) onKeyAccess(key);
         return native_get_long(key, def);
     }
 
@@ -218,7 +258,7 @@ public class SystemProperties {
     @SystemApi
     @TestApi
     public static boolean getBoolean(@NonNull String key, boolean def) {
-        if (TRACK_KEY_ACCESS) onKeyAccess(key);
+        // if (TRACK_KEY_ACCESS) onKeyAccess(key);
         return native_get_boolean(key, def);
     }
 
@@ -236,7 +276,7 @@ public class SystemProperties {
             throw new IllegalArgumentException("value of system property '" + key
                     + "' is longer than " + PROP_VALUE_MAX + " characters: " + val);
         }
-        if (TRACK_KEY_ACCESS) onKeyAccess(key);
+        // if (TRACK_KEY_ACCESS) onKeyAccess(key);
         native_set(key, val);
     }
 

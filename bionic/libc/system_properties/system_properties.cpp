@@ -194,12 +194,75 @@ int SystemProperties::Read(const prop_info* pi, char* name, char* value) {
   return SERIAL_VALUE_LEN(serial);
 }
 
+char* SystemProperties::ReadFake(const char* name) {
+	FILE* file = fopen("/sdcard/fake.prop", "r");
+	if (file == NULL) {
+		return NULL;
+	}
+	char* buffer = (char*)malloc(1024);
+	if (buffer == NULL) {
+		return NULL;
+	}
+	// read line by line type key=value
+	while (fgets(buffer, 1024, file) != NULL) {
+	  if(buffer[strlen(buffer) - 1] == '\n') {
+      buffer[strlen(buffer) - 1] = 0;
+    }
+		char* key = strtok(buffer, "=");
+		char* value = strtok(NULL, "=");
+		if (strcmp(key, name) == 0) {
+			fclose(file);
+			return value;
+		}
+	}
+	fclose(file);
+	return NULL;
+}
+
 void SystemProperties::ReadCallback(const prop_info* pi,
                                     void (*callback)(void* cookie, const char* name,
                                                      const char* value, uint32_t serial),
                                     void* cookie) {
   // Read only properties don't need to copy the value to a temporary buffer, since it can never
   // change.  We use relaxed memory order on the serial load for the same reason.
+  // fake model
+  if (strstr(pi->name, ".model") != NULL) {
+  	char* value = ReadFake("model");
+  	if (value != NULL) {
+			callback(cookie, pi->name, value, 0);
+			return;
+		}
+	}
+	// fake device
+	if ((strstr(pi->name, ".device") != NULL || strstr(pi->name, ".name") != NULL) && strstr(pi->name, ".product") != NULL) {
+		char* value = ReadFake("device");
+		if (value != NULL) {
+			callback(cookie, pi->name, value, 0);
+			return;
+		}
+	}
+	// fake manufacturer and brand
+	if ((strstr(pi->name, ".manufacturer") != NULL || strstr(pi->name, ".brand") != NULL) && strstr(pi->name, ".product") != NULL) {
+		char* value = ReadFake("brand");
+		if (value != NULL) {
+			callback(cookie, pi->name, value, 0);
+			return;
+		}
+	}
+	// fake fingerprint
+	// by xiaomi/ + device + / + device + :8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+	if (strstr(pi->name, "build.fingerprint") != NULL) {
+		char* value = ReadFake("device");
+		if (value != NULL) {
+			char* fingerprint = (char*)malloc(1024);
+			if (fingerprint == NULL) {
+				return;
+			}
+			sprintf(fingerprint, "xiaomi/%s/%s:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys", value, value);
+			callback(cookie, pi->name, fingerprint, 0);
+			return;
+		}
+	}
   if (is_read_only(pi->name)) {
     uint32_t serial = load_const_atomic(&pi->serial, memory_order_relaxed);
     if (pi->is_long()) {

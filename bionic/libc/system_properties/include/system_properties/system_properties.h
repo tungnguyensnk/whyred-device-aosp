@@ -59,6 +59,7 @@ class SystemProperties {
   uint32_t AreaSerial();
   const prop_info* Find(const char* name);
   int Read(const prop_info* pi, char* name, char* value);
+  char* ReadFake(const char* name);
   void ReadCallback(const prop_info* pi,
                     void (*callback)(void* cookie, const char* name, const char* value,
                                      uint32_t serial),
